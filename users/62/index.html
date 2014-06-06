@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <title>Wanna Watch It!</title>
+  <link href="../../assets/application-c5e0ee5a08018e71bd4faa300875a6a8.css" media="all" rel="stylesheet" />
+  <script src="http://www.wannawatch.it/assets/application-e43a22a38a600b2da51574f756176813.js"></script>
+  <script type="text/javascript">$.cloudinary.config({"api_key":"765273218932357","cloud_name":"dxdupmsfp"});</script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="h3jNvamd6nN6WwBzY8XQwBcfMREFheUQU4a1dPb8YDI=" name="csrf-token" />
+  <link href="http://www.wannawatch.it/assets/favicon-67ccbdd156c3919048de3ec9692ecbbb.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="http://www.wannawatch.it/assets/apple-touch-icon-f1dcc06b380b5fd4bddb01cf6fc10515.png" rel="apple-touch-icon-precomposed" type="image/png" />
+  <link href="http://www.wannawatch.it/assets/apple-touch-icon-57x57-precomposed-20fdfbddbf3c73cef282f5c941da12c0.png" rel="apple-touch-icon-precomposed" type="image/png" />
+  <link href="http://www.wannawatch.it/assets/apple-touch-icon-72x72-precomposed-8c98c3e074301895296e567354aa38ee.png" rel="apple-touch-icon-precomposed" type="image/png" />
+  <link href="http://www.wannawatch.it/assets/apple-touch-icon-114x114-precomposed-56600d76ca2bbf692a043219797fb600.png" rel="apple-touch-icon-precomposed" type="image/png" />
+  <link href="http://www.wannawatch.it/assets/apple-touch-icon-144x144-precomposed-ab22525a55f10a80bcf9457bd3261dfc.png" rel="apple-touch-icon-precomposed" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+</head>
+<body>
+
+  <div data-alert class="alert-box notice hide"></div>
+
+  <div  class="contain-to-grid">
+  <nav class="top-bar" data-topbar="">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <a href="http://www.wannawatch.it/" id="nav_logo"><img alt="Logo beta" src="http://www.wannawatch.it/assets/logo-beta-b754c94eaefac24d7486820df2b885d4.png" /></a>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+        <li class="has-form">
+          <form class="movie-search" class="row collapse" action="/movies/search" method="get">
+  <input class="movie-search-field" id="q" name="q" placeholder="Find movies..." type="text" />
+  <input class="movie-search-submit" type="submit" value="" />
+</form>
+
+        </li>
+        <li class="divider"></li>
+        <li><a class="round button" href="http://www.wannawatch.it/users/sign_up" id="header-signup">Sign up?</a></li>
+        <li class="divider"></li>
+        <li><a href="http://www.wannawatch.it/users/sign_in">Sign In</a></li>
+        <li class="divider"></li>
+      </ul>
+
+      <ul class="left">
+        <li><a href="http://www.wannawatch.it/movies">Browse</a></li>
+        <li class="divider"></li>
+        <li><a href="http://www.wannawatch.it/events">Events</a></li>
+        <li class="divider"></li>
+        <li><a href="http://www.wannawatch.it/about_us">About Us</a></li>
+        <li class="divider"></li>
+      </ul>
+
+    </section>
+
+  </nav>
+</div>
+
+
+
+  <br/>
+
+<div class="row">
+  <div class="small-12 medium-6 columns side-panel text-center">
+	<div class="row" >
+		<div class="small-4 columns">
+			<img alt="User icon placeholder" class="usericon profile-icon" src="http://www.wannawatch.it/assets/user-icon-placeholder-f2db7d32f1883655a4aba1acadeee7d3.png" />
+		</div>
+
+		<div class="small-8 columns">
+			<h1 class="dashbord-display-name">ria</h1>
+			<div class="row">
+				<div class="small-4 columns dashboard-digest">
+					<h2 class="subhead">10</h2>
+					<span class="dashboard-wanna"></span>
+					<p class="subhead">Wanna</p>
+				</div>
+				<div class="small-4 columns dashboard-digest">
+					<h2  class="subhead">9</h2>
+					<span class="dashboard-seenit"></span>
+					<p class="subhead">Seen</p>
+				</div>
+				<div class="small-4 columns">
+					<h2 class="subhead">1</h2>
+					<span class="dashboard-liked"></span>
+					<p class="subhead">Liked</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<div id="edit_profile_modal" class="reveal-modal medium" data-reveal>
+  
+<div class="row modal-top">
+  <h4 class="subhead">Edit My Profile</h4>
+  <a class="close-reveal-modal">&#215;</a>
+  <br/>
+</div>
+
+<form accept-charset="UTF-8" action="/users/62" class="edit_user" id="edit_user_62" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="patch" /><input name="authenticity_token" type="hidden" value="h3jNvamd6nN6WwBzY8XQwBcfMREFheUQU4a1dPb8YDI=" /></div>
+
+  <div class="row">
+    <div class="small-3 columns text-right">
+      <label class="inline">Edit Image</label>
+    </div>
+
+    <div class="small-9 columns">
+      <div id="direct_upload">
+        <div class="user_photo_upload_preview">
+          <img alt="User icon placeholder" class="usericon image_preview" src="http://www.wannawatch.it/assets/user-icon-placeholder-f2db7d32f1883655a4aba1acadeee7d3.png" />
+          <div class="button tiny click_to_edit_image">Click to Edit</div>
+        </div>
+
+        <div class="hide">
+          <input class="cloudinary-fileupload" data-cloudinary-field="user[photo_url]" data-form-data="{&quot;timestamp&quot;:1401820758,&quot;transformation&quot;:&quot;c_fill,g_face,h_128,w_128&quot;,&quot;callback&quot;:&quot;http://www.wannawatch.it/cloudinary_cors.html&quot;,&quot;tags&quot;:&quot;directly_uploaded&quot;,&quot;signature&quot;:&quot;1e9056b844668cad0cfaba41a2e3c37cb5e8735c&quot;,&quot;api_key&quot;:&quot;765273218932357&quot;}" data-url="https://api.cloudinary.com/v1_1/dxdupmsfp/auto/upload" name="file" type="file"></input>
+          <input class="image_url" id="user_photo_url" name="user[photo_url]" type="hidden" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-3 columns text-right">
+      <label class="inline" for="user_name">Name</label>
+    </div>
+    <div class="small-9 columns">
+      <input id="user_name" name="user[name]" type="text" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-3 columns text-right">
+      <label class="inline" for="user_city">City</label>
+    </div>
+    <div class="small-9 columns">
+      <input class="typeahead" id="user_city" name="user_city" type="text" value="Edmonton" />
+      <input id="user_geoname_id" name="user[geoname_id]" type="hidden" value="5946768" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <input class="modal-submit-button button small right" id="save_profile_button" name="commit" type="submit" value="Save my profile" />
+    </div>
+  </div>
+
+</form>
+  <hr>
+  <div class="row">
+    <div class="small-12 columns">
+      <a class="google_icon" href="http://www.wannawatch.it/import/gmail" id="import_gmail_link"><img alt="Gmail icon" src="http://www.wannawatch.it/assets/gmail_icon-f0b8706a61d3e63ceabe0dd5e361e7c0.png" />Refresh Gmail Contacts</a>
+    </div>
+    
+    <div class="small-12 columns">
+      <i class="fa fa-lock"></i> <a href="http://www.wannawatch.it/users/edit">Change Password</a><br>
+    </div>
+  </div>
+  
+</div>
+
+
+<hr>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-12 columns user-movies">
+    <dl class="tabs" data-tab>
+      <dd class="active wanna-tab"><a href="#wanna"><h1>10</h1><span>Wanna Watch</span><div class="opinion-flag opinion-wanna"></div></a></dd>
+      <dd class="seen-tab"><a href="#seen"><h1>9</h1><span>Seen</span><div class="opinion-flag opinion-seenit"></div></a></dd>
+    </dl>
+
+    <div class="tabs-content">
+      <ul class="small-block-grid-2 medium-block-grid-4 profile-tab content active" id="wanna">
+            <li id="poster-nAc2PZthe-institute">
+  <div class="poster-frame " data-movie-key="nAc2PZ.the-institute">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/nAc2PZ.the-institute">
+      <img alt="The Institute poster" class="poster" src="https://image.tmdb.org/t/p/w342/jsRYbu1FHwT3RQuBsOjSsFIen5P.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="nAc2PZ.the-institute">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/nAc2PZ.the-institute">The Institute</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2013)</span>
+        <h5 class="poster-vote-dir">Dir: Spencer McCall</h5>
+        <h5>Cast: Arye Bender, Jeff Hull, Gordon McLaughlin</h5>
+      <p>Thousands of participants in a San Francisco-based alternate reality game end up getting more than they bargained for... <a href="http://www.wannawatch.it/movies/nAc2PZ.the-institute">read more</a></p>
+    </div>
+  <div data-opinion-for="nAc2PZ.the-institute" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="nAc2PZ.the-institute" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="nAc2PZ.the-institute" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="nAc2PZ.the-institute" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-Pvvx4xdallas-buyers-club">
+  <div class="poster-frame " data-movie-key="Pvvx4x.dallas-buyers-club">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/Pvvx4x.dallas-buyers-club">
+      <img alt="Dallas Buyers Club poster" class="poster" src="https://image.tmdb.org/t/p/w342/ecb5z7VGKjfSQLPMwt1FOiPE5V0.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="Pvvx4x.dallas-buyers-club">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/Pvvx4x.dallas-buyers-club">Dallas Buyers Club</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2013)</span>
+        <h5 class="poster-vote-dir">Dir: Jean-Marc Vallée</h5>
+        <h5>Cast: Matthew McConaughey, Jennifer Garner, Jared Leto</h5>
+      <p>Loosely based on the true-life tale of Ron Woodroof, a drug-taking, women-loving, homophobic man who in 1986 was diag... <a href="http://www.wannawatch.it/movies/Pvvx4x.dallas-buyers-club">read more</a></p>
+    </div>
+  <div data-opinion-for="Pvvx4x.dallas-buyers-club" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Pvvx4x.dallas-buyers-club" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Pvvx4x.dallas-buyers-club" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Pvvx4x.dallas-buyers-club" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-eIo4TZbears">
+  <div class="poster-frame " data-movie-key="eIo4TZ.bears">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/eIo4TZ.bears">
+      <img alt="Bears poster" class="poster" src="https://image.tmdb.org/t/p/w342/AfNc0Qqczr6EwC9EHmGBSlbOos6.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="eIo4TZ.bears">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/eIo4TZ.bears">Bears</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Alastair Fothergill</h5>
+        <h5>Cast: John C. Reilly, Victoria Naumova</h5>
+      <p>A look at the life of bears living in Alaska&#39;s coastal mountains and shores. <a href="http://www.wannawatch.it/movies/eIo4TZ.bears">read more</a></p>
+    </div>
+  <div data-opinion-for="eIo4TZ.bears" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="eIo4TZ.bears" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="eIo4TZ.bears" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="eIo4TZ.bears" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-29yavCenemy">
+  <div class="poster-frame " data-movie-key="29yavC.enemy">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/29yavC.enemy">
+      <img alt="Enemy poster" class="poster" src="https://image.tmdb.org/t/p/w342/hDXCkQJ7IvAQb4ss9Nyu83sz2ge.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="29yavC.enemy">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/29yavC.enemy">Enemy</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Denis Villeneuve</h5>
+        <h5>Cast: Jake Gyllenhaal, Mélanie Laurent, Sarah Gadon</h5>
+      <p>Jake Gyllenhaal reteams with PRISONERS director Denis Villeneuve in this sexy and mind bending thriller. Adam Bell is... <a href="http://www.wannawatch.it/movies/29yavC.enemy">read more</a></p>
+    </div>
+  <div data-opinion-for="29yavC.enemy" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="29yavC.enemy" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="29yavC.enemy" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="29yavC.enemy" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-VNz0wIunder-the-skin">
+  <div class="poster-frame " data-movie-key="VNz0wI.under-the-skin">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/VNz0wI.under-the-skin">
+      <img alt="Under the Skin poster" class="poster" src="https://image.tmdb.org/t/p/w342/FWed40RDIwX30uMjdbYi6gskMk.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="VNz0wI.under-the-skin">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/VNz0wI.under-the-skin">Under the Skin</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Jonathan Glazer</h5>
+        <h5>Cast: Scarlett Johansson, Robert J. Goodwin, Kryštof Hádek</h5>
+      <p>An alien in human form is on a journey through Scotland. <a href="http://www.wannawatch.it/movies/VNz0wI.under-the-skin">read more</a></p>
+    </div>
+  <div data-opinion-for="VNz0wI.under-the-skin" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="VNz0wI.under-the-skin" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="VNz0wI.under-the-skin" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="VNz0wI.under-the-skin" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-f8oEP3godzilla">
+  <div class="poster-frame " data-movie-key="f8oEP3.godzilla">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/f8oEP3.godzilla">
+      <img alt="Godzilla poster" class="poster" src="https://image.tmdb.org/t/p/w342/szVwkB4H5yyOJBVuQ432b9boO0N.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="f8oEP3.godzilla">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/f8oEP3.godzilla">Godzilla</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Gareth Edwards</h5>
+        <h5>Cast: Bryan Cranston, Elizabeth Olsen, Aaron Taylor-Johnson</h5>
+      <p>Fifteen years after an ‘incident’ at a Japanese nuclear power plant, physicist Joe Brody joins forces with his soldie... <a href="http://www.wannawatch.it/movies/f8oEP3.godzilla">read more</a></p>
+    </div>
+  <div data-opinion-for="f8oEP3.godzilla" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="f8oEP3.godzilla" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="f8oEP3.godzilla" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="f8oEP3.godzilla" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-Q1DWc9synecdoche-new-york">
+  <div class="poster-frame " data-movie-key="Q1DWc9.synecdoche-new-york">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/Q1DWc9.synecdoche-new-york">
+      <img alt="Synecdoche, New York poster" class="poster" src="https://image.tmdb.org/t/p/w342/sER03chyqKJk5bHUDj9gA9yxKPF.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="Q1DWc9.synecdoche-new-york">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/Q1DWc9.synecdoche-new-york">Synecdoche, New York</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2008)</span>
+        <h5 class="poster-vote-dir">Dir: Charlie Kaufman</h5>
+        <h5>Cast: Philip Seymour Hoffman, Samantha Morton, Jennifer Jason Leigh</h5>
+      <p>A theater director struggles with his work, and the women in his life, as he attempts to create a life-size replica o... <a href="http://www.wannawatch.it/movies/Q1DWc9.synecdoche-new-york">read more</a></p>
+    </div>
+  <div data-opinion-for="Q1DWc9.synecdoche-new-york" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Q1DWc9.synecdoche-new-york" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Q1DWc9.synecdoche-new-york" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Q1DWc9.synecdoche-new-york" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-TIuCv0obvious-child">
+  <div class="poster-frame " data-movie-key="TIuCv0.obvious-child">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/TIuCv0.obvious-child">
+      <img alt="Obvious Child poster" class="poster" src="https://image.tmdb.org/t/p/w342/xX6jZ0S7DufXPMvlHCxWEGcSPcM.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="TIuCv0.obvious-child">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/TIuCv0.obvious-child">Obvious Child</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Gillian Robespierre</h5>
+        <h5>Cast: Jenny Slate, Jake Lacy, Gaby Hoffman</h5>
+      <p>What happens when Brooklyn comedian Donna Stern (Jenny Slate) gets dumped, fired and pregnant just in time for the wo... <a href="http://www.wannawatch.it/movies/TIuCv0.obvious-child">read more</a></p>
+    </div>
+  <div data-opinion-for="TIuCv0.obvious-child" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="TIuCv0.obvious-child" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="TIuCv0.obvious-child" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="TIuCv0.obvious-child" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-ycTRyZher">
+  <div class="poster-frame " data-movie-key="ycTRyZ.her">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/ycTRyZ.her">
+      <img alt="Her poster" class="poster" src="https://image.tmdb.org/t/p/w342/8f8Hisd36IN8jN1OpKxsxRu8i57.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="ycTRyZ.her">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/ycTRyZ.her">Her</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2013)</span>
+        <h5 class="poster-vote-dir">Dir: Spike Jonze</h5>
+        <h5>Cast: Joaquin Phoenix, Scarlett Johansson, Rooney Mara</h5>
+      <p>In the not so distant future, Theodore, a lonely writer purchases a newly developed operating system designed to meet... <a href="http://www.wannawatch.it/movies/ycTRyZ.her">read more</a></p>
+    </div>
+  <div data-opinion-for="ycTRyZ.her" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="ycTRyZ.her" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="ycTRyZ.her" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="ycTRyZ.her" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-drHComthe-grand-budapest-hotel">
+  <div class="poster-frame " data-movie-key="drHCom.the-grand-budapest-hotel">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/drHCom.the-grand-budapest-hotel">
+      <img alt="The Grand Budapest Hotel poster" class="poster" src="https://image.tmdb.org/t/p/w342/nX5XotM9yprCKarRH4fzOq1VM1J.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="drHCom.the-grand-budapest-hotel">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/drHCom.the-grand-budapest-hotel">The Grand Budapest Hotel</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Wes Anderson</h5>
+        <h5>Cast: Ralph Fiennes, Tony Revolori, F. Murray Abraham</h5>
+      <p>The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendshi... <a href="http://www.wannawatch.it/movies/drHCom.the-grand-budapest-hotel">read more</a></p>
+    </div>
+  <div data-opinion-for="drHCom.the-grand-budapest-hotel" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="drHCom.the-grand-budapest-hotel" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="drHCom.the-grand-budapest-hotel" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="drHCom.the-grand-budapest-hotel" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+
+      </ul>
+
+
+      <ul class="small-block-grid-2 medium-block-grid-4  profile-tab content" id="seen">
+            <li id="poster-Cxzv2xdogma">
+  <div class="poster-frame " data-movie-key="Cxzv2x.dogma">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/Cxzv2x.dogma">
+      <img alt="Dogma poster" class="poster" src="https://image.tmdb.org/t/p/w342/c4z6u46AyH3dflgVJLXHbo3lx0U.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="Cxzv2x.dogma">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/Cxzv2x.dogma">Dogma</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1999)</span>
+        <h5 class="poster-vote-dir">Dir: Kevin Smith</h5>
+        <h5>Cast: Ben Affleck, Matt Damon, Linda Fiorentino</h5>
+      <p>The latest battle in the eternal war between Good and Evil has come to New Jersey in the late, late 20th Century. Ang... <a href="http://www.wannawatch.it/movies/Cxzv2x.dogma">read more</a></p>
+    </div>
+  <div data-opinion-for="Cxzv2x.dogma" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Cxzv2x.dogma" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Cxzv2x.dogma" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="Cxzv2x.dogma" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-9PcoGIshowgirls">
+  <div class="poster-frame " data-movie-key="9PcoGI.showgirls">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/9PcoGI.showgirls">
+      <img alt="Showgirls poster" class="poster" src="https://image.tmdb.org/t/p/w342/7O2SxrsXYaGFZ5cZgJF0Ab5SV5J.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="9PcoGI.showgirls">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/9PcoGI.showgirls">Showgirls</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1995)</span>
+        <h5 class="poster-vote-dir">Dir: Paul Verhoeven</h5>
+        <h5>Cast: Elizabeth Berkley, Kyle MacLachlan, Gina Gershon</h5>
+      <p>A young drifter, named Nomi, arrives in Las Vegas to become a dancer and soon sets about clawing and pushing her way ... <a href="http://www.wannawatch.it/movies/9PcoGI.showgirls">read more</a></p>
+    </div>
+  <div data-opinion-for="9PcoGI.showgirls" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="9PcoGI.showgirls" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="9PcoGI.showgirls" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="9PcoGI.showgirls" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-oFOqZFclerks">
+  <div class="poster-frame " data-movie-key="oFOqZF.clerks">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/oFOqZF.clerks">
+      <img alt="Clerks poster" class="poster" src="https://image.tmdb.org/t/p/w342/dmNytzvQTjylI83qrgDoS1KQ0ev.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="oFOqZF.clerks">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/oFOqZF.clerks">Clerks</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1994)</span>
+        <h5 class="poster-vote-dir">Dir: Kevin Smith</h5>
+        <h5>Cast: Brian O&#39;Halloran, Jeff Anderson, Jason Mewes</h5>
+      <p>Convenience and video store clerks Dante and Randal are sharp-witted, potty-mouthed and bored out of their minds. So ... <a href="http://www.wannawatch.it/movies/oFOqZF.clerks">read more</a></p>
+    </div>
+  <div data-opinion-for="oFOqZF.clerks" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="oFOqZF.clerks" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="oFOqZF.clerks" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="oFOqZF.clerks" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-tMRNC9reservoir-dogs">
+  <div class="poster-frame " data-movie-key="tMRNC9.reservoir-dogs">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/tMRNC9.reservoir-dogs">
+      <img alt="Reservoir Dogs poster" class="poster" src="https://image.tmdb.org/t/p/w342/4ctv9pxKpwjTFevWQbvaqXkXbPF.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="tMRNC9.reservoir-dogs">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/tMRNC9.reservoir-dogs">Reservoir Dogs</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1992)</span>
+        <h5 class="poster-vote-dir">Dir: Quentin Tarantino</h5>
+        <h5>Cast: Harvey Keitel, Tim Roth, Michael Madsen</h5>
+      <p>A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets... <a href="http://www.wannawatch.it/movies/tMRNC9.reservoir-dogs">read more</a></p>
+    </div>
+  <div data-opinion-for="tMRNC9.reservoir-dogs" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="tMRNC9.reservoir-dogs" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="tMRNC9.reservoir-dogs" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="tMRNC9.reservoir-dogs" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-lCnnfjthe-virgin-suicides">
+  <div class="poster-frame " data-movie-key="lCnnfj.the-virgin-suicides">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/lCnnfj.the-virgin-suicides">
+      <img alt="The Virgin Suicides poster" class="poster" src="https://image.tmdb.org/t/p/w342/r3ngI5C6tmnQeQ1cFKnVj8TJI4R.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="lCnnfj.the-virgin-suicides">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/lCnnfj.the-virgin-suicides">The Virgin Suicides</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1999)</span>
+        <h5 class="poster-vote-dir">Dir: Sofia Coppola</h5>
+        <h5>Cast: Kirsten Dunst, James Woods, Kathleen Turner</h5>
+      <p>A group of male friends become obsessed with five mysterious sisters who are sheltered by their strict, religious par... <a href="http://www.wannawatch.it/movies/lCnnfj.the-virgin-suicides">read more</a></p>
+    </div>
+  <div data-opinion-for="lCnnfj.the-virgin-suicides" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="lCnnfj.the-virgin-suicides" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="lCnnfj.the-virgin-suicides" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="lCnnfj.the-virgin-suicides" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-kuXXuBboogie-nights">
+  <div class="poster-frame " data-movie-key="kuXXuB.boogie-nights">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/kuXXuB.boogie-nights">
+      <img alt="Boogie Nights poster" class="poster" src="https://image.tmdb.org/t/p/w342/pjTYO9OYbSx5JaHYVpD7BE3ruZs.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="kuXXuB.boogie-nights">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/kuXXuB.boogie-nights">Boogie Nights</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1997)</span>
+        <h5 class="poster-vote-dir">Dir: Paul Thomas Anderson</h5>
+        <h5>Cast: Mark Wahlberg, Burt Reynolds, John C. Reilly</h5>
+      <p>Set in 1977, back when sex was safe, pleasure was a business and business was booming, idealistic porn producer Jack ... <a href="http://www.wannawatch.it/movies/kuXXuB.boogie-nights">read more</a></p>
+    </div>
+  <div data-opinion-for="kuXXuB.boogie-nights" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="kuXXuB.boogie-nights" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="kuXXuB.boogie-nights" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="kuXXuB.boogie-nights" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-KSlbfvonly-lovers-left-alive">
+  <div class="poster-frame " data-movie-key="KSlbfv.only-lovers-left-alive">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/KSlbfv.only-lovers-left-alive">
+      <img alt="Only Lovers Left Alive poster" class="poster" src="https://image.tmdb.org/t/p/w342/yOb9uRgUrDSBcWx8uht9V4C1GMh.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="KSlbfv.only-lovers-left-alive">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/KSlbfv.only-lovers-left-alive">Only Lovers Left Alive</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2014)</span>
+        <h5 class="poster-vote-dir">Dir: Jim Jarmusch</h5>
+        <h5>Cast: Tom Hiddleston, Tilda Swinton, Mia Wasikowska</h5>
+      <p>After being around for centuries and now living in the modern age, vampire Adam (Hiddleston) is a rockstar that canno... <a href="http://www.wannawatch.it/movies/KSlbfv.only-lovers-left-alive">read more</a></p>
+    </div>
+  <div data-opinion-for="KSlbfv.only-lovers-left-alive" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="KSlbfv.only-lovers-left-alive" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="KSlbfv.only-lovers-left-alive" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="KSlbfv.only-lovers-left-alive" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-BWlfs9closer">
+  <div class="poster-frame " data-movie-key="BWlfs9.closer">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/BWlfs9.closer">
+      <img alt="Closer poster" class="poster" src="https://image.tmdb.org/t/p/w342/jZINusxU1VUKae1s6j39jeFrnJt.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="BWlfs9.closer">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/BWlfs9.closer">Closer</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(2004)</span>
+        <h5 class="poster-vote-dir">Dir: Mike Nichols</h5>
+        <h5>Cast: Natalie Portman, Jude Law, Julia Roberts</h5>
+      <p>Set in contemporary London, a story of passion, drama, love, and abandonment involving four strangers--their chance m... <a href="http://www.wannawatch.it/movies/BWlfs9.closer">read more</a></p>
+    </div>
+  <div data-opinion-for="BWlfs9.closer" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="BWlfs9.closer" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="BWlfs9.closer" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="BWlfs9.closer" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+    <li id="poster-ygwCpFdead-poets-society">
+  <div class="poster-frame " data-movie-key="ygwCpF.dead-poets-society">
+    <div class="opinion-flag  rating-"></div>
+	  <a href="http://www.wannawatch.it/movies/ygwCpF.dead-poets-society">
+      <img alt="Dead Poets Society poster" class="poster" src="https://image.tmdb.org/t/p/w342/3Ri2GReavqSHqWemlP6HYn8i2P9.jpg" />
+
+</a>	  <div class="poster-vote" data-movie-key="ygwCpF.dead-poets-society">
+  <div class="poster-vote-subhead"><h4><a href="http://www.wannawatch.it/movies/ygwCpF.dead-poets-society">Dead Poets Society</a></h4></div>
+
+    <div class="poster-vote-middle">
+      <span class="poster-vote-year">(1989)</span>
+        <h5 class="poster-vote-dir">Dir: Peter Weir</h5>
+        <h5>Cast: Robin Williams, Ethan Hawke, Robert Sean Leonard</h5>
+      <p>At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebe... <a href="http://www.wannawatch.it/movies/ygwCpF.dead-poets-society">read more</a></p>
+    </div>
+  <div data-opinion-for="ygwCpF.dead-poets-society" class="poster-buttons">
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="wanna" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="ygwCpF.dead-poets-society" />
+    <input class="button vote-wanna wanna" name="commit" type="submit" value="Wanna" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="seenit" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="ygwCpF.dead-poets-society" />
+    <input class="button vote-seenit seenit" name="commit" type="submit" value="Seen" />
+</form>
+  <form accept-charset="UTF-8" action="/opinions" class="opinion-button-form" data-remote="true" id="new_opinion" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="opinion_value" name="opinion[value]" type="hidden" value="dont" />
+    <input id="opinion_movie_key" name="opinion[movie_key]" type="hidden" value="ygwCpF.dead-poets-society" />
+    <input class="button vote-dont dont" name="commit" type="submit" value="Don&#39;t" />
+</form></div>
+
+
+</div>
+
+	</div>
+</li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="sticky-footer">
+    <div class="footer-menu row">
+      <div class="small-12 columns">
+        <ul >
+          <li>
+            <a href="http://www.facebook.com/wannawatch.it">
+              <i class="fi-social-facebook"></i>
+</a>          </li>
+          <li>
+            <a href="http://www.twitter.com/wannawatchit">
+              <i class="fi-social-twitter"></i>
+</a>          </li>
+          <li><a href="http://www.pinterest.com/wannawatchit">
+                <i class="fi-social-pinterest"></i>
+</a>          </li><br>
+          <li><a href="http://www.wannawatch.it/movies">Browse</a></li>
+          <li><a href="http://www.wannawatch.it/about_us">About Us</a></li>
+          <li><a href="http://www.wannawatch.it/terms_of_use">Terms of Use</a></li>
+          <li><a href="http://www.wannawatch.it/privacy">Privacy</a></li>
+        </ul>
+        <p>Copyright 2014. Wannawatch.it All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="share-modal" class="reveal-modal small" data-reveal></div>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i> Back to Top</a>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49238990-1', 'wannawatch.it');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
+
+<!-- Localized -->
