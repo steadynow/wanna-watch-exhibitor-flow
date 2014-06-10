@@ -194,8 +194,17 @@
 }
 
 .share-event {
-	padding-right: 30px;
+	padding-right: 25px;
 }
+
+.share-event h2 {
+	margin-top: -12px;
+}
+
+.share-event h2 i {
+	margin-right: 10px;
+}
+
 
 /*!
 
