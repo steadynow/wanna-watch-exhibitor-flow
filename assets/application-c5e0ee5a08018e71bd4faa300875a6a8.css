@@ -57,6 +57,8 @@
 
 .share-section {
 	font-size: 30px;
+	border-left: 1px solid #C7C6C6;
+	padding-left: 42px;
 }
 
 .share-section .button {
