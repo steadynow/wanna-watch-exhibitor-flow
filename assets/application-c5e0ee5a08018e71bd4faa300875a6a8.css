@@ -132,12 +132,12 @@
 
 .theatre-header ul{
 	position: absolute;
-	bottom: -35px;
+	bottom: -21px;
 	left: 83px;
 }
 
 .theatre-header a > i {
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .subhead b {
@@ -192,7 +192,7 @@
 }
 
 .share-event {
-	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /*!
