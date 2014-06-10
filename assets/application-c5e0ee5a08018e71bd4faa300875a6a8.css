@@ -2,7 +2,7 @@
 
 .email-input {
 	margin-right: 8px;
-	height: 40px;
+	height: 33px;
 	font-size: 16px;
 }
 
@@ -46,10 +46,6 @@
 	font-size: 20px;
 }
 
-.preview-bar .button {
-	margin-top: 20px;
-}
-
 .inline {
 	display: block;
 	margin-top: -10px;
@@ -69,11 +65,15 @@
 }
 
 .share-section i {
-	padding-right: 10px;
+	padding-right: 3px;
 }
 
 .screening-type i {
 	font-size: 100px;
+}
+
+.screening-type h5 {
+	font-size: 16px;
 }
 
 .screening-type span {
@@ -89,6 +89,10 @@
 
 .header-section img {
 	margin-bottom: 10px;
+}
+
+.header-section .text-center {
+	margin-top: 20px;
 }
 
 .details-input input{
@@ -110,9 +114,15 @@
 	margin-bottom: 20px !important;
 }
 
+.add-followers {
+	margin-top: 20px;
+}
+
 .add-followers span {
 	display: inline-block;
-	margin-bottom: 15px;
+	font-size: 16px;
+	position: relative;
+	top: -7px;
 }
 
 .margin-bottom {
@@ -131,6 +141,47 @@
 
 .subhead b {
 	text-shadow: 1px solid rgba(20, 20, 20, 1);
+}
+
+.side-nav {
+	padding: 0;
+}
+
+.side-nav h5 {
+	font-size: 22px;
+	line-height: 15px;
+}
+
+.side-nav .active {
+	background-color: #27b99a;
+	
+	font-weight: bold;
+}
+
+.side-nav li.active>a:first-child:not(.button) {
+	color: white;
+}
+
+.side-nav li {
+	height: 30px;
+	padding-top: 4px;
+	padding-left: 3px;
+	margin: 0;
+}
+
+.side-nav i {
+	color: #27b99a;
+	margin-right: 15px;
+}
+
+.share-now {
+	position: relative;
+	top: 75px;
+}
+
+.share-now i {
+	font-size: 60px;
+	margin: 10px;
 }
 
 /*!
