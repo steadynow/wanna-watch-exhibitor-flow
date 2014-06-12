@@ -64,23 +64,6 @@
 
 
   <div class="row-extend-black">
-    <div class="row theatre-head">
-      <div class="small-4 medium-2 columns text-center">
-        <img alt="Rio logo" class="usericon profile-icon" src="http://www.wannawatch.it/assets/theatre/rio-logo-6a629a3873900dcf3f61871b28d444d7.png" />
-      </div>
-      <div class="small-8 medium-10 columns">
-        <div class="hide-for-small-only">
-          <h1 class="subhead"><a href="http://www.wannawatch.it/theatres/1">Rio Theatre</a></h1>
-          <h4>1660 Broadway Avenue East, Vancouver, BC, Canada</h4>
-          <h5>Phone: (604) 879-3456</h5>
-        </div>
-        <div class="show-for-small-only theatre-small-opacity">
-          <h1 class="subhead"><a href="http://www.wannawatch.it/theatres/1">Rio Theatre</a></h1>
-          <p>1660 Broadway Avenue East, Vancouver, BC, Canada</p>
-          <p>Phone: (604) 879-3456</p>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="row">
@@ -96,9 +79,7 @@
       </div>
     </div>
     <div class="small-10 columns">
-<!--     <h2 class="subhead">Create Screening</h2>
-    <h5 class="subhead"><a href="index.html">Get Started</a>  - <a href="screening-type.html">Screening Type</a> - <b>Choose Movie</b> - Details - Preview - Promote</h5>
-  -->    <div class="row">
+    <div class="row">
   <div class="small-12 columns">
     <h3>Choose Movie</h3>
     <div class="row">
@@ -125,7 +106,7 @@
         </div>
 
         <input id="choose" type="checkbox"><label for="choose"><h5>Choose</h5></label>
-        <span class="inline"><h6>Demand Score:</h6> <h3>High<h3><span>
+        <span class="inline"><h6 id="firstStop">Demand Score:</h6> <h3>High<h3><span>
         </div>
 
         <div class="small-3 columns movie-row">
@@ -146,7 +127,7 @@
           </div>
 
           <input id="choose2" type="checkbox"><label for="choose2"><h5>Choose</h5></label>
-          <span class="inline"><h6>Demand Score:</h6> <h3>High<h3><span>          </div>
+          <span class="inline"><h6>Demand Score:</h6> <h3 id="secondStop">High<h3><span>          </div>
 
             <div class="small-3 columns movie-row">
               <div class="poster-frame">
@@ -194,13 +175,13 @@
 
               </div>
               <!-- start choose movie advert -->
-              <div class="small-12 columns" style="background-image: url('http://www.wannawatch.it/assets/orbit-slider/home-slide-01-a7b7c545c6090e4d04bc534b10420140.jpg'); background-size: contain;">
+              <div class="small-12 columns" style="background-image: url('http://www.wannawatch.it/assets/orbit-slider/home-slide-02-2505dc4444233a7f97c87bd8ebbd208a.jpg'); background-size: cover;">
                 <div class="slider-panel small-10 columns small-offset-1">
                   <div class="small-12 columns">
                    <h3>Suggestions for your Theatre</h3>
                  </div>
                  <div class="small-6 columns">
-                  <h5>Recommended Selections</h5>
+                  <h5 id="thirdStop">Recommended Selections</h5>
                   <div class="row">
 
                     <div class="small-4 columns movie-row">
@@ -521,6 +502,20 @@
                         </div>
 
                         <div id="share-modal" class="reveal-modal small" data-reveal></div>
+
+                        <ol class="joyride-list" data-joyride >
+                          <li data-id="firstStop" data-text="Next" data-options="tip_location: top">
+                            <p>The heart of our movie selection system is the Demand Score.</p>
+                          </li>
+                          <li data-id="secondStop" data-text="Next" data-options="tip_location: top">
+                            <p>This score is based on social media trends and aggregated regional user data.</p>
+                          </li>
+
+                          <li data-id="thirdStop" data-text="Ok" data-options="tip_location: bottom">
+                            <p>We offer curated picks and show what movies are trending with users in your theatre's local area.</p>
+                          </li>
+                        </ol>
+
 
                         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i> Back to Top</a>
                         <script>
