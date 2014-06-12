@@ -76,6 +76,7 @@
 
 .screening-type h5 {
 	font-size: 16px;
+	font-weight: 400;
 }
 
 .screening-type span {
@@ -110,10 +111,6 @@
 .event-create-bg {
 	margin-top: -15px;
 	margin-bottom: -20px;
-}
-
-.event-create-wrap {
-	margin-bottom: 20px !important;
 }
 
 .add-followers {
@@ -190,7 +187,10 @@
 .details-create {
 	margin-left: -30px !important;
 	margin-top: -20px !important;
-	padding-bottom: 5px;
+	padding-bottom: 428px;
+	position: absolute;
+	padding-right: 15px;
+	padding-left: 5px;
 }
 
 .share-event {
@@ -205,6 +205,41 @@
 	margin-right: 10px;
 }
 
+.slider-panel {
+	margin-top: 15px;
+	border-radius: 0px;
+}
+
+.slider-panel h5 {
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 1.195rem;
+}
+
+.slider-panel h4 { 
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.slider-panel p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.slider-panel img {
+	margin-top: 8px;
+}
+
+.slider-panel .button.small {
+	padding-top: 0.095rem;
+	padding-right: 1.0rem;
+	padding-bottom: 0.095rem;
+	padding-left: 1.0rem;
+}
+
+.border {
+	border-left: 1px solid white;
+}
 
 /*!
 
